@@ -73,7 +73,7 @@ if(NOT foonathan_memory_FOUND)
 
   externalproject_add(foo_mem-ext
   GIT_REPOSITORY https://github.com/foonathan/memory.git
-  GIT_TAG c619113
+  GIT_TAG 7851d12
   TIMEOUT 600
   # Avoid the update (git pull) and so the recompilation of foonathan_memory library each time.
   UPDATE_COMMAND ""
