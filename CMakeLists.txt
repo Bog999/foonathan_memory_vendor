@@ -73,7 +73,7 @@ if(NOT foonathan_memory_FOUND)
 
   externalproject_add(foo_mem-ext
   GIT_REPOSITORY https://github.com/Bog999/memory.git
-  GIT_TAG bcfbb72
+  GIT_TAG c1a06eb
   TIMEOUT 600
   # Avoid the update (git pull) and so the recompilation of foonathan_memory library each time.
   UPDATE_COMMAND ""
@@ -82,7 +82,6 @@ if(NOT foonathan_memory_FOUND)
     -DFOONATHAN_MEMORY_BUILD_TESTS=${BUILD_MEMORY_TESTS}
     -DFOONATHAN_MEMORY_BUILD_TOOLS=${BUILD_MEMORY_TOOLS}
     -DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/foo_mem_ext_prj_install
-    -DFOONATHAN_MEMORY_NO_NODE_SIZE=1
     ${extra_cmake_args}
     -Wno-dev
     ${PATCH_COMMAND_STR}
